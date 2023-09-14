@@ -1,5 +1,7 @@
 package dto;
 
+import java.util.List;
+
 public class Client {
     private String code;
     private String name;
@@ -8,6 +10,15 @@ public class Client {
     private String phoneNumber;
     private String email;
     private String website;
+    private List<Project> projects;
+
+    public List<Project> getProjects() {
+        return projects;
+    }
+
+    public void setProjects(List<Project> projects) {
+        this.projects = projects;
+    }
 
     public Client(String code, String name, String description, String contactName, String phoneNumber, String email, String website) {
         this.code = code;

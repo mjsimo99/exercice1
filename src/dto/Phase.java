@@ -1,5 +1,7 @@
 package dto;
 
+import java.util.List;
+
 public class Phase {
 
     private String code;
@@ -12,6 +14,41 @@ public class Phase {
     private boolean statusphase;
     private boolean billed;
     private boolean payed;
+    private List<Project> projects;
+    private List<Employer> employers;
+    private List<Liverable> liverables;
+
+    public List<Liverable> getLiverables() {
+        return liverables;
+    }
+
+    public void setLiverables(List<Liverable> liverables) {
+        this.liverables = liverables;
+    }
+
+    public List<Employer> getEmployers() {
+        return employers;
+    }
+
+    public void setEmployers(List<Employer> employers) {
+        this.employers = employers;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public List<Project> getProjects() {
+        return projects;
+    }
+
+    public void setProjects(List<Project> projects) {
+        this.projects = projects;
+    }
 
     public Phase(String code, String title, String description, String dateStart, String dateEnd, ProjectStatus status, double amount, boolean statusphase, boolean billed, boolean payed) {
         this.code = code;

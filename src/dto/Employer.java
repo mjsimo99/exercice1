@@ -1,5 +1,7 @@
 package dto;
 
+import java.util.List;
+
 public class Employer {
     private String registerNumber;
     private String firstName;
@@ -8,6 +10,16 @@ public class Employer {
     private String email;
     private String login;
     private String password;
+
+    private List<Phase> phases;
+
+    public List<Phase> getPhases() {
+        return phases;
+    }
+
+    public void setPhases(List<Phase> phases) {
+        this.phases = phases;
+    }
 
     public Employer(String registerNumber, String firstName, String lastName, String phoneNumber, String email, String login, String password) {
         this.registerNumber = registerNumber;

@@ -1,13 +1,23 @@
 package dto;
 
-public class Livable {
+import java.util.List;
+
+public class Liverable {
     private String code;
     private String title;
     private String description;
     private String link;
+    private List<Phase> phases;
 
+    public List<Phase> getPhases() {
+        return phases;
+    }
 
-    public Livable(String code, String title, String description, String link) {
+    public void setPhases(List<Phase> phases) {
+        this.phases = phases;
+    }
+
+    public Liverable(String code, String title, String description, String link) {
         this.code = code;
         this.title = title;
         this.description = description;
@@ -46,3 +56,5 @@ public class Livable {
         this.link = link;
     }
 }
+
+

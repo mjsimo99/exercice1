@@ -1,5 +1,7 @@
 package dto;
 
+import java.util.List;
+
 public class Project {
     private String code;
     private String name;
@@ -10,6 +12,25 @@ public class Project {
     private ProjectStatus status;
 
     private double amount;
+    private List<Client> clients;
+    private List<Phase> phases;
+
+    public List<Phase> getPhases() {
+        return phases;
+    }
+
+    public void setPhases(List<Phase> phases) {
+        this.phases = phases;
+    }
+
+    public List<Client> getClients() {
+        return clients;
+    }
+
+    public void setClients(List<Client> clients) {
+        this.clients = clients;
+    }
+
     public enum ProjectStatus {
         Done,
 
