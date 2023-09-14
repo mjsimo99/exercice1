@@ -5,12 +5,19 @@ import java.util.List;
 public class Client {
     private String code;
     private String name;
-    private String description;
-    private String contactName;
+    private String address;
     private String phoneNumber;
-    private String email;
-    private String website;
+
     private List<Project> projects;
+
+
+    public Client(String code, String name, String address, String phoneNumber, List<Project> projects) {
+        this.code = code;
+        this.name = name;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+        this.projects = projects;
+    }
 
     public List<Project> getProjects() {
         return projects;
@@ -18,16 +25,6 @@ public class Client {
 
     public void setProjects(List<Project> projects) {
         this.projects = projects;
-    }
-
-    public Client(String code, String name, String description, String contactName, String phoneNumber, String email, String website) {
-        this.code = code;
-        this.name = name;
-        this.description = description;
-        this.contactName = contactName;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-        this.website = website;
     }
 
     public String getCode() {
@@ -46,20 +43,12 @@ public class Client {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
+    public String getAddress() {
+        return address;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getContactName() {
-        return contactName;
-    }
-
-    public void setContactName(String contactName) {
-        this.contactName = contactName;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getPhoneNumber() {
@@ -68,21 +57,5 @@ public class Client {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getWebsite() {
-        return website;
-    }
-
-    public void setWebsite(String website) {
-        this.website = website;
     }
 }
