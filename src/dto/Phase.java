@@ -14,17 +14,27 @@ public class Phase {
     private boolean statusphase;
     private boolean billed;
     private boolean payed;
-    private List<Project> projects;
+    private Project projects;
     private List<Employer> employers;
-    private List<Liverable> liverables;
+    private Liverable liverables;
 
-    public List<Liverable> getLiverables() {
+    public Liverable getLiverables() {
         return liverables;
     }
 
-    public void setLiverables(List<Liverable> liverables) {
+    public void setLiverables(Liverable liverables) {
         this.liverables = liverables;
     }
+
+    public Project getProjects() {
+        return projects;
+    }
+
+    public void setProjects(Project projects) {
+        this.projects = projects;
+    }
+
+
 
     public List<Employer> getEmployers() {
         return employers;
@@ -42,13 +52,6 @@ public class Phase {
         this.title = title;
     }
 
-    public List<Project> getProjects() {
-        return projects;
-    }
-
-    public void setProjects(List<Project> projects) {
-        this.projects = projects;
-    }
 
     public Phase(String code, String title, String description, String dateStart, String dateEnd, ProjectStatus status, double amount, boolean statusphase, boolean billed, boolean payed) {
         this.code = code;

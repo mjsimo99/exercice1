@@ -8,7 +8,7 @@ public class Client {
     private String address;
     private String phoneNumber;
 
-    private List<Project> projects;
+    private List<Contact> contacts;
 
 
     public Client(String code, String name, String address, String phoneNumber, List<Project> projects) {
@@ -16,15 +16,14 @@ public class Client {
         this.name = name;
         this.address = address;
         this.phoneNumber = phoneNumber;
-        this.projects = projects;
     }
 
-    public List<Project> getProjects() {
-        return projects;
+    public List<Contact> getContacts() {
+        return contacts;
     }
 
-    public void setProjects(List<Project> projects) {
-        this.projects = projects;
+    public void setContacts(List<Contact> contacts) {
+        this.contacts = contacts;
     }
 
     public String getCode() {

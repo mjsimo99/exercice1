@@ -12,7 +12,7 @@ public class Project {
     private ProjectStatus status;
 
     private double amount;
-    private List<Client> clients;
+    private List<Contact> contacts;
     private List<Phase> phases;
 
     public List<Phase> getPhases() {
@@ -23,12 +23,12 @@ public class Project {
         this.phases = phases;
     }
 
-    public List<Client> getClients() {
-        return clients;
+    public List<Contact> getContacts() {
+        return contacts;
     }
 
-    public void setClients(List<Client> clients) {
-        this.clients = clients;
+    public void setContacts(List<Contact> contacts) {
+        this.contacts = contacts;
     }
 
     public enum ProjectStatus {

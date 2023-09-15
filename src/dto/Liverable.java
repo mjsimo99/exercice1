@@ -7,13 +7,22 @@ public class Liverable {
     private String title;
     private String description;
     private String link;
-    private List<Phase> phases;
+    private Phase phases;
+    private List<Document> documents;
 
-    public List<Phase> getPhases() {
+    public List<Document> getDocuments() {
+        return documents;
+    }
+
+    public void setDocuments(List<Document> documents) {
+        this.documents = documents;
+    }
+
+    public Phase getPhases() {
         return phases;
     }
 
-    public void setPhases(List<Phase> phases) {
+    public void setPhases(Phase phases) {
         this.phases = phases;
     }
 
