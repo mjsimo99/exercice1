@@ -1,6 +1,7 @@
 package interfeces;
 
 import dto.Chef;
+import dto.Phase;
 import dto.Project;
 
 public interface Ichef {
@@ -8,11 +9,12 @@ public interface Ichef {
 
 
 
-    Chef add(Chef chef);
-    Chef update(Chef chef);
-    boolean delete(int code);
+    Chef Add(Chef chef);
+    Chef Update(Chef chef);
+    boolean Delete(int code);
+    Phase AddPhase(Phase phase);
     Chef UpdatePhase(int code);
-    Project 
+    Project UpdateProject(int code);
 
 
 
@@ -20,6 +22,5 @@ public interface Ichef {
 
 
 
-+ UpdateProject():project
 
 }
